@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Base container class */
+.container {
+  max-width: 1280px; /* Restricts the maximum width */
+  margin: 0 auto; /* Centers the container */
+  padding: 0 15px; /* Adds space on the sides */
+  width: 100%; /* Ensures full width for smaller screens */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100%; /* Uses full width for screens smaller than 1200px */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px; /* Reduces padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 5px; /* Further reduces padding for very small screens */
+  }
+}
