@@ -13,12 +13,11 @@ import NavBar from "./NavBar";
 const HomePage = () => {
   return (
     <>
-      {/* <NavBar></NavBar> */}
+      <NavBar/>
       <Hero />
       <About />
       <Service />
       <WhyChooseUs />
-
       <RecentWorks />
       <Clients />
       <Contact />

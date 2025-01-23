@@ -7,8 +7,9 @@ const About = () => {
   return (
     <>
     
-    <div className='flex container flex-col md:flex-row lg:flex-row w-full justify-center items-center mb-10'>
-        <div className='w-full md:w-1/2 lg:w-1/2'>
+    <div className='flex container flex-col md:flex-row lg:flex-row w-full justify-center items-center  '>
+
+        <div className='w-full md:w-1/2 lg:w-1/2 mt-[1rem]'>
         <img src={laptop} alt="" />
 
         </div>

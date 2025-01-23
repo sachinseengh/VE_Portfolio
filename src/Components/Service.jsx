@@ -3,8 +3,8 @@ import line from '../assets/images/line.svg'
 import ServiceItem from './ServiceItem'
 const Service = () => {
   return (
-    <div className='container mt-10 lg:mt-20 mb-10'>
-        <div className='flex flex-row justify-start mb-10'>
+    <div className='container  '>
+        <div className='flex flex-row justify-start mb-10 mt-16'>
 
             <div>
                 <img src={line} height={5} width={5}/>

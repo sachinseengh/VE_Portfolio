@@ -4,15 +4,15 @@ import reel from '../assets/images/reel.mp4';
 const ServiceItem = () => {
   return (
     <>
-    <div className="pt-20 container flex flex-row justify-center">
+    <div className="pt-20 container flex flex-row justify-center pb-20 ">
       {/* First Video */}
-      <div className="flex flex-col items-center mx-4">
+      <div className="flex flex-col items-center">
         <h1 className="text-center font-devanagari  text-sm md:text-xl first-line:lg:text-2xl">Clean Edit</h1>
         <video
           controls
           autoPlay
           muted
-          className="w-3/4 h-3/4 object-cover rounded-sm border border-gray-300"
+          className="w-3/4 h-auto object-cover rounded-sm border border-gray-300 "
         >
           <source src={reel} type="video/mp4"  />
           Your browser does not support the video tag.
@@ -26,7 +26,7 @@ const ServiceItem = () => {
           controls
           autoPlay
           muted
-          className="w-3/4 h-3/4 object-cover rounded-sm border border-gray-300"
+          className="w-3/4 h-auto object-cover rounded-sm border border-gray-300"
         >
           <source src={reel} type="video/mp4" />
           Your browser does not support the video tag.

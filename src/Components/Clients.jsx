@@ -4,8 +4,8 @@ import profile from "../assets/images/profile.png";
 
 const Clients = () => {
   return (
-    <div className="container">
-      <h1 className="text-center text-2xl text-orange-500 font-devanagari">
+    <div className="container ">
+      <h1 className="text-center text-4xl text-orange-500 font-devanagari mt-[4rem]">
         Happy Clients
       </h1>
 
@@ -21,8 +21,8 @@ const Clients = () => {
               className="w-28 h-28 rounded-full object-cover"
             />
           </div>
-          <div className=" items-center justify-center px-5">
-          <h1 className="font-devanagari text-center  md:text-xl lg:text-xl">Sachin</h1>
+          <div className="md:items-center lg:items-center  px-5">
+          <h1 className="font-devanagari   md:text-xl lg:text-xl">Sachin</h1>
           <p className="text-start md:text-center lg:text-center text-sm">
             My name is sachin kumar singh hello hello this is me sachin
           </p>
