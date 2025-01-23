@@ -4,7 +4,7 @@ import line from '../assets/images/line.svg'
 
 const RecentWorks = () => {
   return (
-    <div className='container mt-10 lg:mt-20 mb-20'>
+    <div className='container mt-10 lg:mt-20 mb-20' id="works">
     <div className='flex flex-row justify-start mb-10'>
 
         <div>

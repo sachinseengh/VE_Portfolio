@@ -4,7 +4,7 @@ import profile from "../assets/images/profile.png";
 
 const Contact = () => {
   return (
-    <div className="container">
+    <div className="container" id="contact">
       <div className="relative mt-20">
         {/* Upper div */}
         <div className="upper flex flex-col lg:flex-row md:flex-row relative bg-[#004591]  h-auto rounded-lg mx-3 z-20 bottom-3 px-16 py-10 ">

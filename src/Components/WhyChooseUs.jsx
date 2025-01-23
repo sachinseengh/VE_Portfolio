@@ -9,7 +9,7 @@ import customer from "../assets/images/customerService.svg";
 
 const WhyChooseUs = () => {
   return (
-    <div className="container  ">
+    <div className="container" id="whyChooseUs">
       <div className="flex flex-col md:flex-row lg:flex-row justify-start mb-10 mt-20">
 
 

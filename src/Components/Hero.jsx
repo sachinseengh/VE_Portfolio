@@ -18,7 +18,7 @@ const Hero = () => {
 
 
   return (
-    <div className="container ">
+    <div className="container " id="home">
     <div className="flex mt-[4rem]  flex-col md:flex-row justify-center lg:justify-start items-center lg:items-start text-start  border-b border-gray-700 border-opacity-60 lg:mb-[4rem] ">
       {/* Intro Section */}
       <div className="intro flex-row  items-center justify-center lg:w-3/4 w-full pt-10 lg:pt-20">

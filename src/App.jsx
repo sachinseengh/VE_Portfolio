@@ -5,13 +5,16 @@ import './App.css'
 import HomePage from './Components/HomePage'
 import About from './Components/About'
 
+import { BrowserRouter as Router } from 'react-router-dom';
+
 function App() {
   
 
   return (
     <>
+    <Router>
     <HomePage/>
-    
+    </Router>
     </>
   )
 }

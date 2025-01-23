@@ -1,10 +1,10 @@
 import React from "react";
-import profile from "../assets/images/profile.png";
+import profile from "../assets/images/ishan.jpeg";
 
 
 const Clients = () => {
   return (
-    <div className="container ">
+    <div className="container " id="client">
       <h1 className="text-center text-4xl text-orange-500 font-devanagari mt-[4rem]">
         Happy Clients
       </h1>
@@ -22,9 +22,9 @@ const Clients = () => {
             />
           </div>
           <div className="md:items-center lg:items-center  px-5">
-          <h1 className="font-devanagari   md:text-xl lg:text-xl">Sachin</h1>
+          <h1 className="font-devanagari   md:text-xl lg:text-xl text-center">Ishan Sharma</h1>
           <p className="text-start md:text-center lg:text-center text-sm">
-            My name is sachin kumar singh hello hello this is me sachin
+            An Incredible editor with great knowledge of editing and fonts.Helped me a lot in my youtube journey
           </p>
           </div>
         </div>

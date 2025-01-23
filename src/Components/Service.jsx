@@ -3,7 +3,7 @@ import line from '../assets/images/line.svg'
 import ServiceItem from './ServiceItem'
 const Service = () => {
   return (
-    <div className='container  '>
+    <div className='container  ' id="services">
         <div className='flex flex-row justify-start mb-10 mt-16'>
 
             <div>
