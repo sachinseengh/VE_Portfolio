@@ -7,4 +7,7 @@ export default defineConfig({
 
   base: '/VE_Portfolio/',
   plugins: [react()],
+
+  assetsInclude: ['**/*.mp4','**/*.MP4'],
+  
 })

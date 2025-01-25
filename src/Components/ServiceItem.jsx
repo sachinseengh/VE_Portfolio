@@ -1,5 +1,5 @@
 import React from 'react';
-import reel from '../assets/images/reel.mp4';
+import reel from '../assets/videos/reel1.mp4';
 
 const ServiceItem = () => {
   return (
