@@ -1,42 +1,47 @@
 import React from "react";
-
 import profile from "../assets/images/profile.png";
 
 const Contact = () => {
   return (
-    <div className="container" id="contact">
+    <div className="container mx-auto p-6 " id="contact" style={{ backgroundColor: '#E1EFFF' }}>
       <div className="relative mt-20">
-        {/* Upper div */}
-        <div className="upper flex flex-col lg:flex-row md:flex-row relative bg-[#004591]  h-auto rounded-lg mx-3 z-20 bottom-3 px-16 py-10 ">
-
-          <div className="w-full lg:w-1/2 md:w-1/2 ">
-            <img src={profile} alt="" height={150} width={120} />
-
-            <div className="mt-10">
-              <h1 className="font-devanagari text-2xl text-white">
-                Sujay Sharma
-              </h1>
-              <h1 className="font-devanagari text-xl text-orange-500">
-                Video Editor
-              </h1>
-            </div>
+        {/* Upper Section */}
+        <div className="flex flex-col lg:flex-row bg-gradient-to-r from-blue-300 to-blue-500 rounded-lg shadow-xl overflow-hidden relative z-20 px-8 py-12">
+          {/* Profile Section */}
+          <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-center">
+            <img
+              src={profile}
+              alt="Sujay Sharma"
+              className="rounded-full border-4 border-white shadow-lg mb-6"
+              style={{ height: 150, width: 150 }}
+            />
+            <h1 className="text-3xl font-bold text-white mb-2">Sujay Sharma</h1>
+            <h2 className="text-xl text-yellow-400 font-semibold">Video Editor</h2>
           </div>
-          <div className="w-full lg:w-1/2 md:w-1/2">
-          
-            <div>
-                <h1 className="text-white text-xl font-devanagari">About Me</h1>
 
-                <h1 className="text-white text-2xl font-devanagari mt-5">Sujay Sharma</h1>
-                <p className="text-white font-devanagari mt-2 text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis praesentium exercitationem dolorum quis itaque molestias recusandae corrupti, libero hic aperiam. Maiores, sed facilis perferendis consectetur dolorum ipsam. Quo ipsum maiores ab voluptas amet quis voluptatum corrupti quia! Cumque, dolore eveniet?</p>
-
-                <button className="bg-orange-500 mt-3 rounded-md w-24 h-8"> WhatsApp</button>
-            </div>
-
+          {/* About Section */}
+          <div className="w-full lg:w-1/2 mt-10 lg:mt-0 lg:pl-10 text-center lg:text-left">
+            <h1 className="text-white text-2xl font-semibold">About Me</h1>
+            <h2 className="text-yellow-400 text-xl mt-2">Sujay Sharma</h2>
+            <p className="text-white mt-4 leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+              praesentium exercitationem dolorum quis itaque molestias
+              recusandae corrupti, libero hic aperiam. Maiores, sed facilis
+              perferendis consectetur dolorum ipsam. Quo ipsum maiores ab
+              voluptas amet quis voluptatum corrupti quia! Cumque, dolore
+              eveniet?
+            </p>
+            <button
+              className="mt-6 px-6 py-2 bg-yellow-400 text-white font-semibold rounded-md shadow-md hover:bg-yellow-500 transition-all"
+              onClick={() => window.open("https://wa.me/", "_blank")}
+            >
+              WhatsApp
+            </button>
           </div>
         </div>
 
-        {/* Below div */}
-        <div className="absolute bottom-0 bg-orange-500 h-32 rounded-lg z-10 w-full"></div>
+        {/* Decorative Background */}
+        <div className="absolute bottom-0 left-0 right-0 bg-blue-400 h-32 rounded-b-lg z-10"></div>
       </div>
     </div>
   );

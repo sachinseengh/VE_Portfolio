@@ -3,9 +3,9 @@ import {Videos} from '../Constant'
 
 const RecentWorksItem = () => {
   return (
-    <div className="pt-20 container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div className="pt-20 container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
       {Videos.map((video) => (
-       <div className="w-full h-56 md:h-72 lg:h-80 rounded-lg border border-gray-300 overflow-hidden">
+       <div className="w-full h-56 md:h-72 lg:h-80 rounded-lg border border-gray-300 overflow-hidden shadow-2xl  shadow-gray-400">
        <video
          controls
          className="w-full h-full object-cover"

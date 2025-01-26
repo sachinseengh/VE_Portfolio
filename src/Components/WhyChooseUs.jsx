@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
 
 
     {/* Why Choose us text and svg */}
-        <div className="flex flex-row">
+        <div className="flex flex-row ">
         <div className="w-auto">
           <img src={line} height={5} width={5} />
         </div>
@@ -32,27 +32,27 @@ const WhyChooseUs = () => {
         {/* boxes */}
         <div className="flex flex-row flex-wrap mt-7 ml-2 md:mt-0 lg:mt-0 md:ml-28 lg:ml-32 lg:gap-5 md:gap-1 gap-5">
 
-          <div className="bg-orange-500 rounded-3xl w-36 h-36  p-4 pt-10">
+          <div className="bg-orange-500 rounded-3xl w-36 h-36  p-4 pt-10 shadow-xl shadow-gray-400">
             <img src={editor} alt="" width={50} height={50} />
             <h1 className="font-devanagari pt-2 text-white tracking-wide">Expert<br/> Editing</h1>
           </div>
 
-          <div className="bg-orange-500 rounded-3xl w-36 h-36  p-4 pt-10">
+          <div className="bg-orange-500 rounded-3xl w-36 h-36  p-4 pt-10 shadow-xl shadow-gray-400">
             <img src={time} alt="" width={25} height={25} />
             <h1 className="font-devanagari pt-2 text-white tracking-wide">Fast<br/> Turnaround</h1>
           </div>
 
-          <div className="bg-orange-500 rounded-3xl w-36 h-36  p-4 pt-10">
+          <div className="bg-orange-500 rounded-3xl w-36 h-36  p-4 pt-10 shadow-xl shadow-gray-400">
             <img src={customer} alt="" width={40} height={40} />
             <h1 className="font-devanagari pt-2 text-white tracking-wide ">Customizable<br/> Service</h1>
           </div>
 
-          <div className="bg-orange-500 rounded-3xl w-36 h-36  p-4 pt-10">
+          <div className="bg-orange-500 rounded-3xl w-36 h-36  p-4 pt-10 shadow-xl shadow-gray-400">
             <img src={revision} alt="" width={40} height={40} />
             <h1 className="font-devanagari pt-2 text-white tracking-wide">Unlimited<br/>Revision</h1>
           </div>
 
-          <div className="bg-orange-500 rounded-3xl w-36 h-36  p-4 pb-2 pt-10">
+          <div className="bg-orange-500 rounded-3xl w-36 h-36  p-4 pb-2 pt-10 shadow-xl shadow-gray-400">
             <img src={music} alt="" width={25} height={25} />
             <h1 className="font-devanagari pt-2 text-white tracking-wide">Royalty-Free <br/>Music  </h1>
           </div>

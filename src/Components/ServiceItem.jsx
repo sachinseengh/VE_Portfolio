@@ -12,7 +12,7 @@ const ServiceItem = () => {
           controls
           autoPlay
           muted
-          className="w-3/4 h-auto object-cover rounded-sm border border-gray-300 "
+          className="w-3/4 h-auto object-cover rounded-md border border-gray-300  shadow-2xl shadow-gray-700/50"
         >
           <source src={reel} type="video/mp4"  />
           Your browser does not support the video tag.
@@ -26,7 +26,7 @@ const ServiceItem = () => {
           controls
           autoPlay
           muted
-          className="w-3/4 h-auto object-cover rounded-sm border border-gray-300"
+          className="w-3/4 h-auto object-cover rounded-sm border border-gray-300 shadow-2xl shadow-gray-700/50"
         >
           <source src={reel} type="video/mp4" />
           Your browser does not support the video tag.
