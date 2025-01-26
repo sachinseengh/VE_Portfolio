@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { HashLink } from 'react-router-hash-link';
 import whatsApp from '../assets/images/whatsapp.png';
 
 const NavBar = () => {
@@ -11,15 +10,15 @@ const NavBar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
 
+      // Dynamically determine which section is currently in view
       const sections = ['home', 'about', 'services', 'works', 'contact'];
-      let currentSection = 'home'; // Default to home
+      let currentSection = 'home';
 
       sections.forEach((section) => {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
-          // Check if the section is in the viewport
-          if (rect.top <= 50 && rect.bottom >= 50) {
+          if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
             currentSection = section;
           }
         }
@@ -43,7 +42,7 @@ const NavBar = () => {
   };
 
   const handleClick = (section) => {
-    setActiveSection(section); // Ensure the active section updates immediately
+    setActiveSection(section); // Set active section immediately
     document.getElementById(section)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
@@ -69,8 +68,10 @@ const NavBar = () => {
                 <li key={item}>
                   <button
                     onClick={() => handleClick(item.toLowerCase())}
-                    className={`cursor-pointer text-[#004591] opacity-70 hover:opacity-100 transition-opacity duration-300 ${
-                      activeSection === item.toLowerCase() ? 'text-[#002366] opacity-100' : ''
+                    className={`cursor-pointer text-[#0061d3] opacity-100 hover:opacity-100 transition-opacity duration-300 ${
+                      activeSection === item.toLowerCase()
+                        ? 'text-[#004591] font-semibold ' // Bright color for active state
+                        : 'hover:text-[#0061d3]' // Hover color for non-active items
                     }`}
                   >
                     {item}
@@ -83,10 +84,10 @@ const NavBar = () => {
           {/* WhatsApp Button for Larger Screens */}
           <div className="hidden md:block">
             <a
-              href="https://wa.me/11234567890"
+              href="https://wa.me/+919380036964"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white bg-green-500 p-3 rounded-full text-xl flex items-center gap-2 hover:bg-green-600 transition-colors duration-300"
+              className="text-white bg-green-500 px-4 py-2 rounded-full text-xl flex items-center gap-2 hover:bg-green-600 transition-colors duration-300"
             >
               <img src={whatsApp} alt="WhatsApp" className="object-cover h-7" />
               WhatsApp
@@ -122,25 +123,27 @@ const NavBar = () => {
                         handleClick(item.toLowerCase());
                         toggleMenu();
                       }}
-                      className={`cursor-pointer text-white hover:text-gray-400 transition-colors duration-300 ${
-                        activeSection === item.toLowerCase() ? 'text-gray-300' : ''
+                      className={`cursor-pointer text-white hover:text-[#0061d3] transition-colors duration-300 ${
+                        activeSection === item.toLowerCase()
+                          ? 'text-[#0061d3]' // Active item color for mobile
+                          : ''
                       }`}
                     >
                       {item}
                     </button>
                   </li>
-              
                 ))}
                 <li>
-                <a
-              href="https://wa.me/11234567890"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white bg-green-500 p-3 rounded-full text-xl flex items-center gap-2 hover:bg-green-600 transition-colors duration-300"
-            >
-              <img src={whatsApp} alt="WhatsApp" className="object-cover h-7" />
-              WhatsApp
-            </a>
+               <a
+                          href="https://wa.me/+919380036964"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="Contact me on WhatsApp"
+                          className="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-full text-sm md:text-base hover:bg-green-600 transition duration-300"
+                        >
+                          <img src={whatsApp} alt="WhatsApp" className="h-6 w-6" />
+                          WhatsApp
+                        </a>
                 </li>
               </ul>
             </div>

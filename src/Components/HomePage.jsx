@@ -9,6 +9,7 @@ import RecentWorks from "./RecentWorks";
 import Clients from "./Clients";
 import Contact from "./Contact";
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 const HomePage = () => {
   return (
@@ -20,7 +21,8 @@ const HomePage = () => {
       <WhyChooseUs />
       <RecentWorks />
       <Clients />
-      <Contact />
+      {/* <Contact /> */}
+      <Footer></Footer>
     </>
   );
 };

@@ -23,7 +23,7 @@ const Hero = () => {
       {/* Intro Section */}
       <div className="intro flex-row  items-center justify-center lg:w-3/4 w-full pt-10 lg:pt-20">
         <div className="title">
-          <h1 className="lg:text-[2.9rem] md:text-[1.5rem] text-[1.5rem] font-bleeding lg:leading-[4.9rem] md:leading-[2.5rem] sm:leading-[2.7rem] mb-3 text-[#004591] text-center md:text-start lg:text-start">
+          <h1 className="lg:text-[2.9rem] md:text-[1.5rem] text-[1.5rem] font-bleeding lg:leading-[4.9rem] md:leading-[2.5rem] sm:leading-[2.7rem] mb-3 text-[#004591] text-center md:text-start lg:text-start" >
             Turn Raw Footage into <br /> Captivating Stories
           </h1>
 
@@ -32,7 +32,7 @@ const Hero = () => {
             <span className='text-[#FC6F03] text-3xl font-devanagari pb-2'>Sujay Sharma</span>
       
             <div className=" pt-1 mt-2   ">
-              <span className="text-3xl font-devanagari text-black "><span className="text-[#004591]">I am a </span><span className="underline">{text}</span></span>
+              <span className="text-3xl font-devanagari text-black "><span className="text-[#004591]">I am a </span><span className="font-bold">{text}</span></span>
               <span className='text-sm lg:text-4xl  md:text-2xl text-red-500'><Cursor/></span>
             </div>
           </div>
@@ -47,7 +47,9 @@ const Hero = () => {
         <img
           src={profile}
           alt="Profile"
-          className=" object-contain " height={600} width={450}
+          className=" object-contain   " height={600} width={450}
+
+          style={{ filter: "drop-shadow(6px 5px 2px gray)" }}
         />
       </div>
 
