@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Videos } from '../Constant';
-import profile from "../assets/images/sujay.png";
+import profile from '../assets/images/sujay.png';
 
 const RecentWorksItem = () => {
   return (
@@ -16,23 +16,30 @@ const VideoItem = ({ video }) => {
   const [poster, setPoster] = useState('');
 
   useEffect(() => {
-    const generateThumbnail = async () => {
+    const generateThumbnail = () => {
       const videoElement = document.createElement('video');
       videoElement.src = video.src;
+      videoElement.crossOrigin = 'anonymous'; // Allow cross-origin access (if the server supports CORS)
       videoElement.currentTime = 1; // Capture a frame at 1 second
       videoElement.muted = true;
 
       videoElement.addEventListener('loadeddata', () => {
-        const canvas = document.createElement('canvas');
-        canvas.width = videoElement.videoWidth;
-        canvas.height = videoElement.videoHeight;
+        try {
+          const canvas = document.createElement('canvas');
+          canvas.width = videoElement.videoWidth;
+          canvas.height = videoElement.videoHeight;
 
-        const context = canvas.getContext('2d');
-        context.drawImage(videoElement, 0, 0, canvas.width, canvas.height);
+          const context = canvas.getContext('2d');
+          context.drawImage(videoElement, 0, 0, canvas.width, canvas.height);
 
-        const thumbnail = canvas.toDataURL('image/jpeg');
-        setPoster(thumbnail); // Set the generated thumbnail
+          const thumbnail = canvas.toDataURL('image/jpeg');
+          setPoster(thumbnail); // Set the generated thumbnail
+        } catch (error) {
+          console.error('Error generating thumbnail:', error);
+        }
       });
+
+      videoElement.load(); // Trigger the video to load
     };
 
     generateThumbnail();
@@ -43,7 +50,7 @@ const VideoItem = ({ video }) => {
       <video
         controls
         className="w-full h-full object-cover"
-        poster={poster || {profile}} // Show dynamic or default thumbnail
+        poster={poster || profile} // Show dynamic or default thumbnail
       >
         <source src={video.src} type="video/mp4" />
         Your browser does not support the video tag.
