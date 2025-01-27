@@ -19,11 +19,11 @@ const About = () => {
         </div>
 
         <div className=" w-full md:w-1/2 lg:w-1/2  p-5">
-          <h1 className="text-black text-3xl font-devanagari text-center   ">
+          <h1 className="text-black text-xl lg:text-2xl md:text-2xl font-devanagari text-center   ">
             We craft professional video edits that engage your audience and
             achieve your goals.
           </h1>
-          <h1 className="text-[#FC6F03] text-3xl font-devanagari text-center mt-8">
+          <h1 className="text-[#FC6F03] text-2xl lg:text-3xl md:text-3xl font-devanagari text-center mt-8">
             10+ Trusted Clients
           </h1>
         </div>

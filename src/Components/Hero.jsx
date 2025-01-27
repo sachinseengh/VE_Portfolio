@@ -19,7 +19,7 @@ const Hero = () => {
 
   return (
     <div className="container " id="home">
-    <div className="flex mt-[4rem]  flex-col md:flex-row justify-center lg:justify-start items-center lg:items-start text-start  border-b border-gray-700 border-opacity-60 lg:mb-[4rem] ">
+    <div className="flex mt-[4rem]  flex-col md:flex-row justify-center lg:justify-start items-center lg:items-start text-start  lg:border-b md:border-b border-gray-700 border-opacity-20 lg:mb-[4rem] ">
       {/* Intro Section */}
       <div className="intro flex-row  items-center justify-center lg:w-3/4 w-full pt-10 lg:pt-20">
         <div className="title">
@@ -49,22 +49,22 @@ const Hero = () => {
           alt="Profile"
           className=" object-contain   " height={600} width={450}
 
-          style={{ filter: "drop-shadow(6px 5px 2px gray)" }}
+          style={{ filter: "drop-shadow(6px 0px 2px gray)" }}
         />
       </div>
 
 
      
       {/* Name Section for Small Screens */}
-      <div className="Name mt-[4rem] block lg:hidden md:hidden ">
+      <div className=" w-full text-center Name pt-[1rem] pb-[1rem] block lg:hidden md:hidden border-t border-gray-500  border-opacity-20">
       
            
-           <span className='text-[#FC6F03] text-3xl font-devanagari pb-2'>Sujay Sharma</span>
-     
-           <div className=" pt-1 mt-2   ">
-             <span className="text-3xl font-devanagari text-black "><span className="text-[#004591]">I am a </span><span className="underline">{text}</span></span>
-             <span className='text-sm lg:text-4xl  md:text-2xl text-red-500'><Cursor/></span>
-           </div>
+      <span className='text-[#FC6F03] text-2xl font-devanagari pb-2 text-center'>Sujay Sharma</span>
+      
+      <div className=" pt-1 mt-2   ">
+        <span className="text-2xl font-devanagari text-black  text-center"><span className="text-[#004591]">I am a </span><span className="font-bold">{text}</span></span>
+        <span className='text-sm lg:text-3xl  md:text-2xl text-red-500'><Cursor/></span>
+      </div>
          
       </div>
     </div>
