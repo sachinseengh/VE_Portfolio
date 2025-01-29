@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Videos } from '../Constant';
 import profile from '../assets/images/sujay.png';
+import { FaPlay } from 'react-icons/fa'; // Import play icon
 
 const RecentWorksItem = () => {
   return (
@@ -13,48 +14,41 @@ const RecentWorksItem = () => {
 };
 
 const VideoItem = ({ video }) => {
-  const [poster, setPoster] = useState('');
+  const [poster, setPoster] = useState(profile); // Default thumbnail
+  const [isPlaying, setIsPlaying] = useState(false); // Track whether video is playing
 
   useEffect(() => {
-    const generateThumbnail = () => {
-      const videoElement = document.createElement('video');
-      videoElement.src = video.src;
-      videoElement.crossOrigin = 'anonymous'; // Allow cross-origin access (if the server supports CORS)
-      videoElement.currentTime = 1; // Capture a frame at 1 second
-      videoElement.muted = true;
-
-      videoElement.addEventListener('loadeddata', () => {
-        try {
-          const canvas = document.createElement('canvas');
-          canvas.width = videoElement.videoWidth;
-          canvas.height = videoElement.videoHeight;
-
-          const context = canvas.getContext('2d');
-          context.drawImage(videoElement, 0, 0, canvas.width, canvas.height);
-
-          const thumbnail = canvas.toDataURL('image/jpeg');
-          setPoster(thumbnail); // Set the generated thumbnail
-        } catch (error) {
-          console.error('Error generating thumbnail:', error);
-        }
-      });
-
-      videoElement.load(); // Trigger the video to load
-    };
-
-    generateThumbnail();
+    if (video.src.includes("youtube.com")) {
+      const videoId = video.src.split("embed/")[1]?.split("?")[0];
+      setPoster(`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`);
+    }
   }, [video.src]);
 
   return (
-    <div className="w-full h-56 md:h-72 lg:h-80 rounded-lg border border-gray-300 overflow-hidden shadow-2xl shadow-gray-400">
-      <video
-        controls
-        className="w-full h-full object-cover"
-        poster={poster || profile} // Show dynamic or default thumbnail
-      >
-        <source src={video.src} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    <div
+      className="relative w-full h-56 md:h-72 lg:h-80 rounded-lg border border-gray-300 overflow-hidden shadow-2xl shadow-gray-400 cursor-pointer"
+      onClick={() => setIsPlaying(true)} // Start video when clicked
+    >
+      {isPlaying ? (
+        <iframe
+          className="w-full h-full"
+          src={`${video.src}?autoplay=1&rel=0`}
+          title="YouTube video"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      ) : (
+        <>
+          <img src={poster} alt="Video thumbnail" className="w-full h-full object-cover" />
+          {/* Play Button */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="bg-white/80 w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full flex items-center justify-center shadow-lg transition duration-300 hover:scale-110">
+              <FaPlay className="text-orange-600 text-3xl md:text-4xl lg:text-5xl ml-1 opacity-70" />
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 };

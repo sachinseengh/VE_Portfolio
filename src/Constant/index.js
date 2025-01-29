@@ -1,50 +1,45 @@
-import reel1 from '../assets/videos/reel1.mp4'
-import reel2 from '../assets/videos/reel2.MP4'
-import reel3 from '../assets/videos/reel3.MP4'
-import reel4 from '../assets/videos/reel4.MP4'
-import reel5 from '../assets/videos/reel5.MP4'
-import reel6 from '../assets/videos/reel6.MP4'
-import reel7 from '../assets/videos/reel7.MP4'
+
 
 
 export const Videos = [
     {
         id:1,
-        src:reel1
+        src:"https://www.youtube.com/embed/LZ8XnsJr5c4" 
+
     },
     {
         id:2,
-        src:reel2
+        src:"https://www.youtube.com/embed/02WDtvexfHk" 
+        
     },
     {
         id:3,
-        src:reel3
+        src:"https://www.youtube.com/embed/qIbTiBMm6JQ" 
+
+      
     },
     {
         id:4,
-        src:reel4
+        src:"https://www.youtube.com/embed/rJaImdAZWcM" 
     },
     {
         id:5,
-        src:reel5
+        src:"https://www.youtube.com/embed/ehjQSr7z4y8" 
     },
     {
         id:6,
-        src:reel6
+        src:"https://www.youtube.com/embed/sNqeHsngjEw" 
     },
-    {
-        id:7,
-        src:reel7
-    }
+   
 ]
 
 export const Service = [
     {
         id:1,
-        src:reel1
+        src:"https://www.youtube.com/embed/sNqeHsngjEw" 
     },
     {
         id:2,
-        src:reel4
+        src:"https://www.youtube.com/embed/rJaImdAZWcM" 
     }
 ]
