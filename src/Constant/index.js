@@ -36,10 +36,12 @@ export const Videos = [
 export const Service = [
     {
         id:1,
+        title:"Clean Edit",
         src:"https://www.youtube.com/embed/sNqeHsngjEw" 
     },
     {
         id:2,
+        title:"3D Edit",
         src:"https://www.youtube.com/embed/rJaImdAZWcM" 
     }
 ]
