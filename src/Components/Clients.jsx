@@ -1,10 +1,11 @@
 import React from "react";
-import profile from "../assets/images/ishan.jpeg";
+import ishan from "../assets/images/ishan.jpeg";
+import saptarshi from '../assets/images/saptarsi.png'
 
 const Clients = () => {
   return (
     <div className="container" id="client">
-      <h1 className="text-center text-4xl text-orange-500 font-devanagari mt-[4rem]">
+      <h1 className="text-center text-4xl text-orange-500 font-devanagari mt-[6rem]">
         Happy Clients
       </h1>
 
@@ -15,7 +16,7 @@ const Clients = () => {
          <div className="lg:w-1/3 md:w-1/3 w-full flex flex-col md:flex-col lg:flex-col lg:items-center lg:justify-center justify-center items-center">
           <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full flex  items-center justify-center">
             <img
-              src={profile}
+              src={ishan}
               alt="Client 1"
               className="w-full h-full rounded-full object-cover"
             />
@@ -24,18 +25,18 @@ const Clients = () => {
             <h1 className="font-devanagari md:text-xl lg:text-xl text-center">
               Ishan Sharma
             </h1>
-            <p className="text-start md:text-center lg:text-center text-sm border border-gray-600 p-2 rounded-lg shadow-sm shadow-black">
+            <p className="text-start md:text-center lg:text-center text-sm  p-2 rounded-lg shadow-sm shadow-black">
               An Incredible editor with great knowledge of editing and fonts.
               Helped me a lot in my YouTube journey.
             </p>
           </div>
         </div>
 
-         {/* Circle 1 */}
+         {/* Circle 2 */}
          <div className="lg:w-1/3 md:w-1/3 w-full flex flex-col md:flex-col lg:flex-col lg:items-center lg:justify-center justify-center items-center">
           <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full flex  items-center justify-center">
             <img
-              src={profile}
+              src={saptarshi}
               alt="Client 1"
               className="w-full h-full rounded-full object-cover"
             />
@@ -44,7 +45,7 @@ const Clients = () => {
             <h1 className="font-devanagari md:text-xl lg:text-xl text-center">
               Ishan Sharma
             </h1>
-            <p className="text-start md:text-center lg:text-center text-sm border border-gray-600 p-2 rounded-lg shadow-sm shadow-black">
+            <p className="text-start md:text-center lg:text-center text-sm border  p-2 rounded-lg shadow-sm shadow-black">
               An Incredible editor with great knowledge of editing and fonts.
               Helped me a lot in my YouTube journey.
             </p>
@@ -54,7 +55,7 @@ const Clients = () => {
          <div className="lg:w-1/3 md:w-1/3 w-full flex flex-col md:flex-col lg:flex-col lg:items-center lg:justify-center justify-center items-center">
           <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full flex  items-center justify-center">
             <img
-              src={profile}
+              src={ishan}
               alt="Client 1"
               className="w-full h-full rounded-full object-cover"
             />
@@ -63,7 +64,7 @@ const Clients = () => {
             <h1 className="font-devanagari md:text-xl lg:text-xl text-center">
               Ishan Sharma
             </h1>
-            <p className="text-start md:text-center lg:text-center text-sm border border-gray-600 p-2 rounded-lg shadow-sm shadow-black">
+            <p className="text-start md:text-center lg:text-center text-sm  p-2 rounded-lg shadow-sm shadow-black">
               An Incredible editor with great knowledge of editing and fonts.
               Helped me a lot in my YouTube journey.
             </p>

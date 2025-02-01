@@ -5,7 +5,7 @@ import '../index.css'
 
 const Footer = () => {
   return (
-    <footer className=" w-full bg-gray-900 text-white py-6 px-5 rounded-lg mt-[5rem]" id="contact">
+    <footer className=" w-full bg-gray-900 text-white py-6 px-5 rounded-lg mt-[5rem] shadow-black shadow-2xl" id="contact">
       <div className="w-full flex flex-col items-center justify-center gap-8">
         {/* Profile Section */}
         <div className="flex items-center gap-4 flex-col">

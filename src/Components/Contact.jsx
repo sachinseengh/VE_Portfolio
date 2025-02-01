@@ -3,8 +3,8 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="w-full mx-auto p-6 " id="contact" style={{ backgroundColor: '#E1EFFF' }}>
-      <div className="relative mt-20">
+    <div className="w-full mx-auto p-6    " id="contact" style={{ backgroundColor: '#E1EFFF' }}>
+      <div className="relative mt-20  ">
         {/* Upper Section */}
         <div className="flex flex-col lg:flex-row bg-gradient-to-r from-blue-300 to-blue-500 rounded-lg shadow-xl overflow-hidden relative z-20 px-8 py-12">
           {/* Profile Section */}

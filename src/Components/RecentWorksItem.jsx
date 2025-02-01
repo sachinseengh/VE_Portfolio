@@ -2,14 +2,22 @@ import React, { useState, useEffect } from 'react';
 import { Videos } from '../Constant';
 import profile from '../assets/images/sujay.png';
 import { FaPlay } from 'react-icons/fa'; // Import play icon
+import {motion} from 'framer-motion'
 
 const RecentWorksItem = () => {
   return (
-    <div className="pt-20 container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <motion.div
+
+            
+    whileInView={{ opacity: 1, y: 0 }}
+    initial={{ opacity: 0, y: -250 }}
+    transition={{ duration: 0.7 }}
+     className="pt-20 container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      
       {Videos.map((video) => (
         <VideoItem key={video.id} video={video} />
       ))}
-    </div>
+    </motion.div>
   );
 };
 
