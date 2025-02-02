@@ -8,10 +8,11 @@ import customer from "../assets/images/customerService.svg";
 import {motion} from 'framer-motion'
 
 
+
 const WhyChooseUs = () => {
   return (
     <div className="container" id="whyChooseUs">
-      <div className="flex flex-col md:flex-row lg:flex-row justify-start mb-10 mt-28 lg:mt-44">
+      <div className="flex flex-col md:flex-row lg:flex-row justify-start mb-10 lg:mt-20 mt-10">
 
 
     {/* Why Choose us text and svg */}
@@ -35,8 +36,8 @@ const WhyChooseUs = () => {
         
         
         whileInView={{ opacity: 1, y: 0 }}
-      initial={{ opacity: 0, y: 150 }}
-      transition={{ duration: 0.5 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 0.5 }}
         
         className="flex flex-row flex-wrap mt-7 ml-2 md:mt-0 lg:mt-0 md:ml-28 lg:ml-32 lg:gap-5 md:gap-1 gap-5">
 

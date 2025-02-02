@@ -1,6 +1,3 @@
-
-
-
 export const Videos = [
     {
         id:1,
@@ -43,5 +40,20 @@ export const Service = [
         id:2,
         title:"3D Edit",
         src:"https://www.youtube.com/embed/rJaImdAZWcM" 
+    }
+]
+
+export const Review = [
+    {
+        id:1,
+        name:"Ishan Sharma",
+        image:"src/assets/images/ishan.jpeg",
+        review:"An Incredible editor with great knowledge of editing and fonts. Helped me a lot in my YouTube journey."
+    },
+    {
+        id:2,
+        name:"Saptarshi Praksh",
+        image:"src/assets/images/saptarshi.png",
+        review:"An Incredible editor with great knowledge of editing and fonts. Helped me a lot in my YouTube journey."
     }
 ]

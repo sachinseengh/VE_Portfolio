@@ -33,7 +33,12 @@ const VideoItem = ({ video }) => {
   }, [video.src]);
 
   return (
-    <div
+    <motion.div
+    whileInView={{ opacity: 1, x: 0 }}
+    initial={{ opacity: 0, x: -100 }}
+    transition={{ duration: 0.5 }}
+
+
       className="relative w-full h-56 md:h-72 lg:h-80 rounded-lg border border-gray-300 overflow-hidden shadow-2xl shadow-gray-400 cursor-pointer"
       onClick={() => setIsPlaying(true)} // Start video when clicked
     >
@@ -57,7 +62,7 @@ const VideoItem = ({ video }) => {
           </div>
         </>
       )}
-    </div>
+    </motion.div>
   );
 };
 
