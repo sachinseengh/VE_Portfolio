@@ -1,24 +1,35 @@
 import React from "react";
-
 import laptop from "../assets/images/About.png";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <>
-      <div
+      <motion.div
+
+
+whileInView={{ opacity: 1, x: 0 }}
+initial={{ opacity: 0, x: -150 }}
+transition={{ duration: 0.5 }}
         className="flex container flex-col md:flex-row lg:flex-row w-full justify-center items-center  "
         id="about"
       >
-        <div className="w-full md:w-1/2 lg:w-1/2 mt-[1rem]">
+        <div
+         
+          className="w-full md:w-1/2 lg:w-1/2 mt-[1rem]"
+        >
           <img
             src={laptop}
-            alt=""
+            alt="editing in laptop image"
             className="w-full"
             style={{ filter: "drop-shadow(0 3px 8px gray)" }}
           />
         </div>
 
-        <div className=" w-full md:w-1/2 lg:w-1/2  p-5">
+        <div
+   
+          className=" w-full md:w-1/2 lg:w-1/2  p-5"
+        >
           <h1 className="text-black text-xl lg:text-2xl md:text-2xl font-devanagari text-center   ">
             We craft professional video edits that engage your audience and
             achieve your goals.
@@ -27,7 +38,7 @@ const About = () => {
             10+ Trusted Clients
           </h1>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

@@ -3,6 +3,7 @@ import profile from "../assets/images/sujay.png";
 import whatsApp from "../assets/images/whatsapp.png";
 import "../index.css";
 import Gmail from "../assets/images/gmail.png";
+import {motion} from 'framer-motion';
 
 const Footer = () => {
   return (
@@ -19,7 +20,14 @@ const Footer = () => {
       {/* Outer Glow Effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-black opacity-40 blur-3xl"></div>
 
-      <div className="w-full flex flex-col items-center justify-center gap-8 relative z-10">
+      <motion.div 
+      
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 200 }}
+      transition={{ duration: 0.4
+       }}
+      
+      className="w-full flex flex-col items-center justify-center gap-8 relative z-10">
         {/* Profile Section */}
         <div className="flex items-center gap-4 flex-col">
           <div className="w-16 h-16 md:w-20 md:h-20 relative">
@@ -45,10 +53,7 @@ const Footer = () => {
             About Me
           </h2>
           <p className="text-sm md:text-base text-gray-100">
-            Hello! I'm Sujay, a passionate developer with a love for creating
-            innovative and efficient solutions. Whether it's designing
-            user-friendly interfaces, optimizing performance, or exploring new
-            technologies, I strive to deliver exceptional results.
+          I'm Sujay, a passionate video editor who loves bringing stories to life through creative and engaging visuals. Whether it's cutting scenes smoothly, adding stunning effects, or optimizing video quality, I aim to create amazing content that stands out.
           </p>
         </div>
 
@@ -66,13 +71,13 @@ const Footer = () => {
           </a>
           <a
             href="mailto:Suzyt182@gmail.com"
-            className="flex items-center gap-2 bg-red-500 text-white px-4 py-2 rounded-full text-sm md:text-base shadow-lg shadow-red-700 hover:bg-red-600 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+            className="flex items-center gap-2 bg-orange-500 text-white px-4 py-2 rounded-full text-sm md:text-base shadow-lg shadow-orange-700 hover:bg-orange-600 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
           >
             <img src={Gmail} alt="Gmail" className="h-6 w-6" />
             Gmail
           </a>
         </div>
-      </div>
+      </motion.div>
     </footer>
   );
 };

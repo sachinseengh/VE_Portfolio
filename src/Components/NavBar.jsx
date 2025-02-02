@@ -98,7 +98,7 @@ const NavBar = () => {
 
             <a
               href="mailto:Suzyt182@gmail.com"
-              className="text-white bg-red-500 px-3 py-2 rounded-full text-base flex items-center gap-2 hover:bg-red-600 transition-colors duration-300 shadow-lg shadow-red-700 hover:shadow-2xl"
+              className="text-white bg-orange-500 px-3 py-2 rounded-full text-base flex items-center gap-2 hover:bg-orange-600 transition-colors duration-300 shadow-lg shadow-orange-700 hover:shadow-2xl"
             >
               <img
                 src={Gmail}
@@ -156,7 +156,7 @@ const NavBar = () => {
               </a>
               <a
                 href="mailto:Suzyt182@gmail.com"
-                className="flex items-center gap-2 bg-red-500 text-white px-4 py-2 rounded-full text-base hover:bg-red-600 transition duration-300 shadow-lg shadow-red-700 hover:shadow-2xl"
+                className="flex items-center gap-2 bg-orange-500 text-white px-4 py-2 rounded-full text-base hover:bg-orange-600 transition duration-300 shadow-lg shadow-orange-700 hover:shadow-2xl"
               >
                 <img
                   src={Gmail}

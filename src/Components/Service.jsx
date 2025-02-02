@@ -4,7 +4,7 @@ import ServiceItem from './ServiceItem'
 const Service = () => {
   return (
     <div className='container  ' id="services">
-        <div className='flex flex-row justify-start mb-5 lg:mb-1 md:mb-1 lg:mt-16 mt-1 md:mt-15'>
+        <div className='flex flex-row justify-start mb-5 lg:mb-10 md:mb-1 lg:mt-16 mt-1 md:mt-15'>
 
             <div>
                 <img src={line} height={5} width={5}/>

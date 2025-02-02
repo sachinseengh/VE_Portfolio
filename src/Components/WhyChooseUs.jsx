@@ -6,11 +6,13 @@ import music from "../assets/images/Music.svg";
 import revision from "../assets/images/unlimitedRevision.svg";
 import customer from "../assets/images/customerService.svg";
 
+import {motion} from 'framer-motion';
+
 
 const WhyChooseUs = () => {
   return (
     <div className="container" id="whyChooseUs">
-      <div className="flex flex-col md:flex-row lg:flex-row justify-start mb-10 mt-20">
+      <div className="flex flex-col md:flex-row lg:flex-row justify-start mb-10 lg:mt-20 mt-10">
 
 
     {/* Why Choose us text and svg */}
@@ -30,7 +32,14 @@ const WhyChooseUs = () => {
 
 
         {/* boxes */}
-        <div className="flex flex-row flex-wrap mt-7 ml-2 md:mt-0 lg:mt-0 md:ml-28 lg:ml-32 lg:gap-5 md:gap-1 gap-5">
+        <motion.div
+        
+        
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 0.5 }}
+        
+        className="flex flex-row flex-wrap mt-7 ml-2 md:mt-0 lg:mt-0 md:ml-28 lg:ml-32 lg:gap-5 md:gap-1 gap-5">
 
           <div className="bg-orange-500 rounded-3xl w-36 h-36  p-4 pt-10 shadow-xl shadow-gray-400">
             <img src={editor} alt="" width={50} height={50} />
@@ -61,7 +70,7 @@ const WhyChooseUs = () => {
           
         
           
-        </div>
+        </motion.div>
       </div>
     </div>
   );
