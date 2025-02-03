@@ -1,3 +1,6 @@
+import ishan from "../assets/images/ishan.jpeg";
+import saptarshi from "../assets/images/saptarshi.png";
+
 export const Videos = [
     {
         id:1,
@@ -33,27 +36,29 @@ export const Videos = [
 export const Service = [
     {
         id:1,
-        title:"Clean Edit",
+        title:"Style 1",
         src:"https://www.youtube.com/embed/sNqeHsngjEw" 
     },
     {
         id:2,
-        title:"3D Edit",
+        title:"Style 2",
         src:"https://www.youtube.com/embed/rJaImdAZWcM" 
     }
 ]
 
 export const Review = [
+
     {
-        id:1,
-        name:"Ishan Sharma",
-        image:"src/assets/images/ishan.jpeg",
-        review:"An Incredible editor with great knowledge of editing and fonts. Helped me a lot in my YouTube journey."
+        id: 1,
+        name: "Ishan Sharma",
+        image:ishan,
+        review: "A great editor who knows editing and fonts well. Helped me a lot in my YouTube journey."
     },
     {
-        id:2,
-        name:"Saptarshi Praksh",
-        image:"src/assets/images/saptarshi.png",
-        review:"An Incredible editor with great knowledge of editing and fonts. Helped me a lot in my YouTube journey."
+        id: 2,
+        name: "Saptarshi Praksh",
+        image: saptarshi,
+        review: "Very talented in editing. Made my videos look much better!"
     }
+    
 ]

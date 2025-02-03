@@ -60,7 +60,7 @@ const Footer = () => {
         {/* Contact Buttons */}
         <div className="flex items-center justify-center gap-3">
           <a
-            href="https://wa.me/11234567890"
+            href="https://wa.me/+919380036964"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Contact me on WhatsApp"
