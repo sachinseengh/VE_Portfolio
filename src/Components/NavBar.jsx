@@ -86,7 +86,7 @@ const NavBar = () => {
               href="https://wa.me/+919380036964"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white bg-green-500 px-3 py-2 rounded-full text-base flex items-center gap-2 hover:bg-green-600 transition-colors duration-300 shadow-lg shadow-green-700 hover:shadow-2xl"
+              className="text-blue-500 bg-[#E1EFFF] px-3 py-2 rounded-full text-base flex items-center gap-2 hover:bg-[#E1EFFF] transition-colors duration-300 shadow-sm shadow-[#7593ac]  hover:shadow-xl"
             >
               <img
                 src={whatsApp}
@@ -98,7 +98,7 @@ const NavBar = () => {
 
             <a
               href="mailto:Suzyt182@gmail.com"
-              className="text-white bg-orange-500 px-3 py-2 rounded-full text-base flex items-center gap-2 hover:bg-orange-600 transition-colors duration-300 shadow-lg shadow-orange-700 hover:shadow-2xl"
+              className="text-blue-500 bg-[#E1EFFF] px-3 py-2 rounded-full text-base flex items-center gap-2 hover:bg-[#E1EFFF] transition-colors duration-300 shadow-sm shadow-[#7593ac]  hover:shadow-xl"
             >
               <img
                 src={Gmail}
