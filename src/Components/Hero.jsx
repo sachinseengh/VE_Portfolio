@@ -51,7 +51,7 @@ const Hero = () => {
                initial="hidden"
                animate="visible"
               className="text-[#FC6F03] text-3xl font-devanagari pb-2">
-                Sujay Sharma
+                Sujay Thakur
               </motion.span>
 
               <div className=" pt-1 mt-2   ">
@@ -91,7 +91,7 @@ const Hero = () => {
                animate="visible"
         className=" w-full text-center Name pt-[1rem] pb-[1rem] block lg:hidden md:hidden border-t border-gray-500  border-opacity-20">
           <span className="text-[#FC6F03] text-2xl font-devanagari pb-2 text-center">
-            Sujay Sharma
+            Sujay Thakur
           </span>
 
           <div className=" pt-1 mt-2   ">

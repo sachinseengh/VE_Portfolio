@@ -27,7 +27,7 @@ const About = () => {
             achieve your goals.
           </h1>
           <h1 className="text-[#FC6F03] text-2xl lg:text-3xl md:text-3xl font-devanagari text-center mt-8">
-            100 + Trusted Clients
+            10 + Trusted Clients
           </h1>
         </div>
       </motion.div>
