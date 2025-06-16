@@ -11,7 +11,8 @@ export const Videos = [
     {
         id:2,
      
-        src:"https://youtube.com/embed/tevLuSdvzaM" 
+        // src:"https://youtube.com/embed/tevLuSdvzaM" 
+        src:"https://youtube.com/embed/5G75wacCRXc?si=UlGcj4H2KhxTyL8D"
         
     },
     {

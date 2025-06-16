@@ -56,8 +56,8 @@ const VideoItem = ({ video }) => {
           <img src={poster} alt="Video thumbnail" className="w-full h-full object-cover" />
           {/* Play Button */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="bg-white/80 w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full flex items-center justify-center shadow-lg transition duration-300 hover:scale-110">
-              <FaPlay className="text-orange-600 text-3xl md:text-4xl lg:text-5xl ml-1 opacity-70" />
+            <div className="bg-white w-8 h-8 md:w-12 md:h-12 lg:w-12 lg:h-12 rounded-full flex items-center justify-center shadow-lg transition duration-300 hover:scale-110 opacity-55">
+              <FaPlay className="text-green-800 text-xl md:text-xl lg:text-xl ml-1 opacity-90" />
             </div>
           </div>
         </>
