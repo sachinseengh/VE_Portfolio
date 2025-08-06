@@ -20,8 +20,7 @@ export const Videos = [
     {
         id:3,
    
-        // src:"https://youtube.com/embed/BMebpRebGGE"
-        src:"https://youtube.com/embed/v1jdF_gp69g?si=S4XpCLoboOErfJJG"
+        src:"https://youtube.com/embed/C_uo8v8ml3o?si=b2IPXKt49LYpze2W"
 
       
     },
@@ -31,11 +30,7 @@ export const Videos = [
     },
     {
         id:5,
-        src:"https://youtube.com/embed/2Zrzso-qN0o?si=g-2k_PVTglRTLy8K" 
-    },
-    {
-        id:6,
-        src:"https://youtube.com/embed/Xm1uWDnkL3M?si=KsJl2Gk8zMHzOqLf" 
+        src:"https://youtube.com/embed/v1jdF_gp69g?si=S4XpCLoboOErfJJG"
     }
    
 ]
