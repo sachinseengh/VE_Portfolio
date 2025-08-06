@@ -3,6 +3,7 @@ import profile from "../assets/images/sujay.png";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 
+
 const container = (delay) => ({
   hidden: {
     x: -100,
@@ -34,7 +35,7 @@ const Hero = () => {
               variants={container(0.4)}
               initial="hidden"
               animate="visible"
-              className="lg:text-[2.9rem] md:text-[1.5rem] text-[1.5rem] font-bleeding lg:leading-[4.9rem] md:leading-[2.5rem] sm:leading-[2.7rem] mb-3 text-[#004591] text-center md:text-start lg:text-start"
+              className="lg:text-[2.9rem] md:text-[1.5rem] text-[1.5rem] font-whiteScratches lg:leading-[4.9rem] md:leading-[2.5rem] sm:leading-[2.7rem] mb-3 text-[#004591] text-center md:text-start lg:text-start"
             >
               Turn Raw Footage into <br /> Captivating Stories
             </motion.h1>

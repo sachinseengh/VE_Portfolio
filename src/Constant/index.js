@@ -44,7 +44,9 @@ export const Service = [
     {
         id:1,
         title:"Style 1",
-       src:"https://youtube.com/embed/0TvRcHhRTPU"
+
+       src:"https://youtube.com/embed/sK9DiEq6kAk?si=MmQpnzB1gEEcrEHc"
+    //    src:"https://youtube.com/embed/0TvRcHhRTPU"
     },
     {
         id:2,

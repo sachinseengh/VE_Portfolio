@@ -7,6 +7,14 @@
   src: url('./assets/fonts/Tiro.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'White-Scratches';
+  src: url('/assets/fonts/White-Scratches') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 #root {
   max-width: 100vw;
   height: 100%;

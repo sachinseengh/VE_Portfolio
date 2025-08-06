@@ -30,4 +30,11 @@
      /* Further reduces padding for very small screens */
   }
 }
+@font-face {
+  font-family: 'White-Scratches';
+  src: url('/fonts/White-Scratches.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
